@@ -49,7 +49,7 @@ for autoDicc in listaAutos:                  # iteración basada en elementos de
 # --------------  El formateo se hace con la función:  "str.format()"
 print("\n\033[32m MODELOS DE AUTOS: \033[0m ")
 print("\n\033[32mMarca        Modelo    Año   Motor \033[0m")
-for auto in listaAutos:                  
+for autoDicc in listaAutos:                  
     print("{:<12} {:<9} {:<5} {:<10}".format(autoDicc["marca"], autoDicc["modelo"], 
                                             autoDicc["anio"], autoDicc["motor"]))
 
