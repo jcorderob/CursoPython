@@ -12,6 +12,8 @@ diccFuenteTitulo = {'family':'serif','color':'blue','size':20}
 diccFuenteEjes   = {'family':'serif','color':'darkred','size':15}
 
 # --------------  Dibujando las etiquetas  -----------------
+plt.plot(ypuntos)
+plt.plot(ypuntos2)
 plt.title("TITULO DEL GRÁFICO", fontdict= diccFuenteTitulo)
 plt.xlabel("Leyenda eje X", fontdict= diccFuenteEjes)
 plt.ylabel("Leyenda eje Y", fontdict= diccFuenteEjes)
