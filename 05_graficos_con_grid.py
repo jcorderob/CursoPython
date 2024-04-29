@@ -18,7 +18,7 @@ plt.title("TITULO DEL GRÁFICO", fontdict= diccFuenteTitulo)
 plt.xlabel("Leyenda eje X", fontdict= diccFuenteEjes)
 plt.ylabel("Leyenda eje Y", fontdict= diccFuenteEjes)
 
-# ------------  Dibujando la rejilla o cuadrícula  --------------
-plt.grid(color = 'green', linestyle = '--', linewidth = 0.5)
+# ------------  Dibujando la rejilla o cuadrícula  -----------------
+plt.grid(color = 'green', linestyle = '--', linewidth = 0.1, axis="y")
 plt.show()
 
