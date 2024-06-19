@@ -150,7 +150,7 @@ SELECT * FROM alumnos ORDER BY apellido ASC;
 UPDATE nombre_tabla 
    SET campo1 = valor1, 
        campo2 = valor2,
-       campo3 = valor3,  
+       campo3 = valor3 
        ...
 WHERE condición;
 
@@ -169,8 +169,20 @@ DELETE FROM alumnos  WHERE alumnoDNI = '77777'; -- OJO
 
 -- ---------- ALTERAR LA ESTRUCTURA DE LA TABLA
 
+-- --- AGREGAR COLUMNAS
+
 ALTER TABLE nombre_tabla ADD nombre_de_campo tipo_de_datos;
 
-ALTER TABLE alumnos ADD COLUMN direccion VARCHAR(255) NOT NULL AFTER fecha_nacimiento;
+ALTER TABLE alumnos ADD COLUMN direccion VARCHAR(255) NOT NULL AFTER fechanacimiento;
 
+-- ----- ELIMINAR COLUMNAS
 
+ALTER TABLE alumnos DROP COLUMN telefono;
+
+-- ------ CREAR UNA TABLA DE RESPALDO
+
+CREATE TABLE alumnos_backup AS SELECT * FROM alumnos;
+
+-- ------ VERIFICAR EL CONTENIDO DE LA TABLA DE RESPALDO:
+
+SELECT * FROM alumnos_backup;
